@@ -3,6 +3,8 @@
 
 html {
     font-family: 'Libre Baskerville', serif;
+  display:flex;
+  justify-content: center;
     
     
 }
@@ -14,6 +16,9 @@ body {
     /* background: url('./images/architecture-art-background-1451474\ \(2\).jpg'); */
     background-size: cover;
     background-attachment: fixed;
+    max-width: 1210px;
+    margin:50px;
+    
     
 }
 
