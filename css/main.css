@@ -31,7 +31,7 @@ nav{
     border: solid rgb(0, 0, 0) 1px;
     justify-content: space-evenly;
     font-size: 40px;
-    background:radial-gradient(rgba(255, 255, 255, 0.116), rgba(0, 0, 255, 0.151));
+    background:linear-gradient(rgba(255, 255, 255, 0.116), rgba(0, 0, 8, 0.281));
   
     /* position: sticky;
     top: 0px; */
