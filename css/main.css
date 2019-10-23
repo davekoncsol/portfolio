@@ -2,80 +2,81 @@
 
 
 html {
-    font-family: 'Libre Baskerville', serif;
-  display:flex;
+  font-family: 'Libre Baskerville', serif;
+  display: flex;
   justify-content: center;
-    
-    
+
+
 }
+
 body {
-    display: grid;
-    grid-template-rows: 100px 800px;
-    color: white;
-    background:#E3E6EA;
-    /* background: url('./images/architecture-art-background-1451474\ \(2\).jpg'); */
-    background-size: cover;
-    background-attachment: fixed;
-    max-width: 1210px;
-    margin:50px;
-    
-    
+  display: grid;
+  grid-template-rows: 100px 800px;
+  color: white;
+  background: #E3E6EA;
+  /* background: url('./images/architecture-art-background-1451474\ \(2\).jpg'); */
+  background-size: cover;
+  background-attachment: fixed;
+  max-width: 1210px;
+  margin: 50px;
+
+
 }
 
 
 
-nav{
-    display:flex;
-    align-items: flex-end;
-    /* background: radial-gradient(rgba(128, 128, 128, 0), rgba(0, 0, 255, 0.274)); */
-    border: solid rgb(0, 0, 0) 1px;
-    justify-content: space-evenly;
-    font-size: 40px;
-    background:linear-gradient(rgba(255, 255, 255, 0.116), rgba(0, 0, 8, 0.281));
-  
-    /* position: sticky;
+nav {
+  display: flex;
+  align-items: flex-end;
+  /* background: radial-gradient(rgba(128, 128, 128, 0), rgba(0, 0, 255, 0.274)); */
+  border: solid rgb(0, 0, 0) 1px;
+  justify-content: space-evenly;
+  font-size: 40px;
+  background: linear-gradient(rgba(255, 255, 255, 0.116), rgba(0, 0, 8, 0.281));
+
+  /* position: sticky;
     top: 0px; */
-    
-  
-    
+
+
+
 }
 
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .top-image {
-    background: url('./images/laptop-desk-macbook-writing-working-technology-860609-pxhere.com.jpg');
-    height: 200px;
-    background-size: cover;   
-    background-attachment: fixed;
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397);
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    border: solid rgb(0, 0, 0) 1px;
-    margin-top:15px;
-    
-    
+  background: url('./images/laptop-desk-macbook-writing-working-technology-860609-pxhere.com.jpg');
+  height: 200px;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid rgb(0, 0, 0) 1px;
+  margin-top: 15px;
+
+
 }
 
 .middle-image {
-    background: url('./images/photography-purple-train-color-training-studio-764110-pxhere.com.jpg');
-    height: 200px;
-    background-size: cover;   
-    background-attachment: fixed;
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397);
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0px;
-    margin-bottom: 15px;
-    border: solid rgb(0, 0, 0) 1px;
+  background: url('./images/photography-purple-train-color-training-studio-764110-pxhere.com.jpg');
+  height: 200px;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  border: solid rgb(0, 0, 0) 1px;
 }
 
 
@@ -87,17 +88,18 @@ a:hover {
     justify-content: space-evenly;
     height: 300px;
     box-shadow: 10px 10px 10px 5px grey; */
-    
-/* } */ 
-.box-1, .box-2{
-    animation: fadeIn duration ease-in delay 1  forwards;
-    background-color: white !important;
-    display: flex;
-    height: 200px;
-    width:200px;
-    justify-content: center;
-    align-items: center;
-    box-shadow:  10px 10px 5px grey;
+
+/* } */
+.box-1,
+.box-2 {
+  animation: fadeIn duration ease-in delay 1 forwards;
+  background-color: white !important;
+  display: flex;
+  height: 200px;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 5px grey;
 }
 
 
@@ -108,98 +110,101 @@ a:hover {
 } */
 
 @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+  from {
+    opacity: 0;
   }
 
-  .description {
-    max-width: 40px;
-    height: 300px;
-    position: -webkit-sticky;
-    position: sticky;
-    left: 0; /* become sticky once touching left edge */
+  to {
+    opacity: 1;
   }
-  
-  .sidescroller{
-    display: flex;
-    align-items: center;
-    overflow-x: auto;
-    overflow-y: hidden;
-    background: #000;
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397);
-    border: solid rgb(0, 0, 0) 1px;
-  }
-  
-.content-1{
-    display: grid;
-    align-content: center;
-    grid-auto-flow: column;
-    justify-content: center;
-   
-    margin: 0;
-    padding: 20px;
-  }
+}
+
+.description {
+  max-width: 40px;
+  height: 300px;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  /* become sticky once touching left edge */
+}
+
+.sidescroller {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  background: #000;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397);
+  border: solid rgb(0, 0, 0) 1px;
+}
+
+.content-1 {
+  display: grid;
+  align-content: center;
+  grid-auto-flow: column;
+  justify-content: center;
+
+  margin: 0;
+  padding: 20px;
+}
+
 .arrow {
   align-self: center;
 }
 
-  .content-about-me{
-    display:flex;
-    align-items: center;
-    flex-direction: column;
-    background: url('./images/music-crowd-concert-audience-live-musician-315-pxhere.com.jpg');
-    justify-content: space-evenly;
-    background-attachment: fixed;
-    background-size:cover;
-    height: 800px;
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397);
-    border: solid rgb(0, 0, 0) 1px;
+.content-about-me {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: url('./images/music-crowd-concert-audience-live-musician-315-pxhere.com.jpg');
+  justify-content: space-evenly;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 800px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397);
+  border: solid rgb(0, 0, 0) 1px;
 
-  }
-  
-  .content-about-me img {
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397);
-    border-radius: 10px;
-  }
+}
 
-  .content-about-me p {
-    font-size: 20px;
-    width:600px;
-    /* transform: translate(0px, -200px); */
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397);
-  }
+.content-about-me img {
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397);
+  border-radius: 10px;
+}
 
-.content-about-me .p2  {
+.content-about-me p {
+  font-size: 20px;
+  width: 600px;
+  /* transform: translate(0px, -200px); */
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397);
+}
+
+.content-about-me .p2 {
   /* transform: translate(0px, 200px); */
 }
-  
-.item{
-    display: flex;
-  }
-  
- .description span{
-    display: inline-block;
-    background: rgba(0,0,0,.5);
-    width: 300px;
-    height: 40px;
-    transform: rotate(-90deg) translateX(-300px);
-    transform-origin: left top 0;
-    padding-top: 11px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 14px;
-  }
-  
-  img{
-    max-height: 300px;
-  }
 
-  /* Dropdown Button */
+.item {
+  display: flex;
+}
+
+.description span {
+  display: inline-block;
+  background: rgba(0, 0, 0, .5);
+  width: 300px;
+  height: 40px;
+  transform: rotate(-90deg) translateX(-300px);
+  transform-origin: left top 0;
+  padding-top: 11px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14px;
+}
+
+img {
+  max-height: 300px;
+}
+
+/* Dropdown Button */
 /* .dropdown-b {
   background-color: #4CAF50;
   color: white;
@@ -220,7 +225,7 @@ a:hover {
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -234,26 +239,35 @@ a:hover {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
 
 @media only screen and (max-width: 1200px) {
-  .content-about-me p{
+  .content-about-me p {
     margin-top: 60px;
   }
-  
-  .content-about-me p, .p2 {
+
+  .content-about-me p,
+  .p2 {
     width: 400px;
-    transform: translate(0px,0px);
+    transform: translate(0px, 0px);
   }
+
   .content-about-me {
-    flex-direction:column ;
+    flex-direction: column;
   }
+
   nav {
     font-size: 30px;
   }
