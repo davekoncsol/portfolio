@@ -219,8 +219,26 @@ a:hover {
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 @media only screen and (max-width: 1200px) {
-  .content-about-me p, .p2 {
-    width: auto;
+  .content-about-me p{
+    margin-top: 60px;
   }
   
+  .content-about-me p, .p2 {
+    width: auto;
+    transform: translate(0px,0px);
+  }
+  .content-about-me {
+    flex-direction:column ;
+  }
+  nav {
+    font-size: 30px;
+  }
+
+}
+
+@media only screen and (max-width: 750px) {
+  nav {
+    font-size: 20px;
+  }
+
 }
