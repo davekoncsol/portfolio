@@ -18,6 +18,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   max-width: 1210px;
+
   margin: 50px;
 
 
@@ -33,10 +34,10 @@ nav {
   justify-content: space-evenly;
   font-size: 40px;
   background: linear-gradient(rgba(255, 255, 255, 0.116), rgba(0, 0, 8, 0.281));
-
+  /* background: powderblue; */
   /* position: sticky;
     top: 0px; */
-
+  background-size: cover;
 
 
 }
@@ -65,6 +66,20 @@ a:hover {
 
 }
 
+.index-top-image {
+  background: url('./images/color-conifer-environment-192136.jpg');
+  height: 200px;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid rgb(0, 0, 0) 1px;
+  margin-top: 15px;
+}
+
 .middle-image {
   background: url('./images/photography-purple-train-color-training-studio-764110-pxhere.com.jpg');
   height: 200px;
@@ -74,11 +89,25 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 0px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: solid rgb(0, 0, 0) 1px;
+
+}
+
+.index-middle-image {
+  background: url('./images/color-conifer-environment-192136.jpg');
+  height: 200px;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
   margin-bottom: 15px;
   border: solid rgb(0, 0, 0) 1px;
 }
-
 
 
 /* /* .content-1 {
@@ -152,6 +181,28 @@ a:hover {
   align-self: center;
 }
 
+
+.index-content {
+  /* display: flex;
+  align-items: center;
+  flex-direction: column; */
+  background: linear-gradient(rgba(255, 255, 255, 0.116), rgba(0, 0, 8, 0.281));
+  /* justify-content: space-evenly; */
+  background-attachment: fixed;
+  background-size: cover;
+  height: 800px;
+  position: initial;
+
+
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397);
+  border: solid rgb(0, 0, 0) 1px;
+}
+
+#index-content div {
+  border-radius: 50%;
+  position: absolute;
+}
+
 .content-about-me {
   display: flex;
   align-items: center;
@@ -161,6 +212,8 @@ a:hover {
   background-attachment: fixed;
   background-size: cover;
   height: 800px;
+
+
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397);
   border: solid rgb(0, 0, 0) 1px;
 
@@ -173,7 +226,7 @@ a:hover {
 
 .content-about-me p {
   font-size: 20px;
-  width: 600px;
+  /* width: 600px; */
   /* transform: translate(0px, -200px); */
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397);
 }
@@ -253,6 +306,43 @@ img {
   background-color: #3e8e41;
 }
 
+
+
+/* project.html */
+
+.project {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background: linear-gradient(rgba(255, 255, 255, 0.116), rgba(0, 0, 8, 0.281));
+  justify-content: space-evenly;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 800px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397);
+  border: solid rgb(0, 0, 0) 1px;
+  margin-top: 15px;
+
+}
+
+.project img {
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397);
+  border-radius: 10px;
+  max-height: 200px;
+
+}
+
+.project div {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+}
+
+
+
 @media only screen and (max-width: 1200px) {
   .content-about-me p {
     margin-top: 60px;
@@ -260,7 +350,7 @@ img {
 
   .content-about-me p,
   .p2 {
-    width: 400px;
+    /* width: 400px; */
     transform: translate(0px, 0px);
   }
 
