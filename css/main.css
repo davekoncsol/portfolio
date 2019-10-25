@@ -33,11 +33,13 @@ nav {
   border: solid rgb(0, 0, 0) 1px;
   justify-content: space-evenly;
   font-size: 40px;
-  background: linear-gradient(rgba(255, 255, 255, 0.116), rgba(0, 0, 8, 0.281));
+  /* background: linear-gradient(rgba(255, 255, 255, 0.116), rgba(0, 0, 8, 0.281)); */
+  background: linear-gradient(rgb(0, 0, 0), rgb(43, 106, 217));
   /* background: powderblue; */
   /* position: sticky;
     top: 0px; */
   background-size: cover;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397);
 
 
 }
@@ -186,7 +188,7 @@ a:hover {
   /* display: flex;
   align-items: center;
   flex-direction: column; */
-  background: linear-gradient(rgba(255, 255, 255, 0.116), rgba(0, 0, 8, 0.281));
+  background: linear-gradient(rgb(0, 0, 0), rgb(43, 106, 217));
   /* justify-content: space-evenly; */
   
   background-size: cover;
