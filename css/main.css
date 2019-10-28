@@ -174,9 +174,12 @@ a:hover {
   align-content: center;
   grid-auto-flow: column;
   justify-content: center;
-
-  margin: 0;
+  border: solid rgb(0, 0, 0) 1px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397);
+  margin-top: 15px;
+  margin-bottom: 15px;
   padding: 20px;
+  background: linear-gradient(rgba(255, 255, 255, 0.116), rgba(0, 0, 8, 0.281));
 }
 
 .arrow {
@@ -185,12 +188,12 @@ a:hover {
 
 
 .index-content {
-  /* display: flex;
+  display: flex;
   align-items: center;
-  flex-direction: column; */
+  justify-content: center;
   background: linear-gradient(rgb(0, 0, 0), rgb(43, 106, 217));
   /* justify-content: space-evenly; */
-  
+
   background-size: cover;
   min-height: 100px;
   position: initial;
@@ -230,8 +233,8 @@ a:hover {
 .content-about-me p {
   font-size: 20px;
   /* width: 600px; */
-  margin-left: 60px ;
-  margin-right: 60px ;
+  margin-left: 60px;
+  margin-right: 60px;
   /* transform: translate(0px, -200px); */
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397);
 }
@@ -327,6 +330,7 @@ img {
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397);
   border: solid rgb(0, 0, 0) 1px;
   margin-top: 15px;
+  margin-bottom: 15px;
 
 }
 
@@ -367,11 +371,20 @@ img {
     font-size: 30px;
   }
 
+  .index-content {
+    font-size: 10px;
+  }
+
 }
+
 
 @media only screen and (max-width: 750px) {
   nav {
     font-size: 20px;
+  }
+
+  .index-content {
+    font-size: 7px;
   }
 
 }
