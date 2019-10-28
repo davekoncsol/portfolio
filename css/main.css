@@ -217,7 +217,7 @@ a:hover {
   background-attachment: fixed;
   background-size: cover;
   min-height: 800px;
-
+  margin-bottom: 15px;
 
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397);
   border: solid rgb(0, 0, 0) 1px;
