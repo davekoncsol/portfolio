@@ -238,7 +238,7 @@ a:hover {
   margin-right: 60px;
   /* transform: translate(0px, -200px); */
   /* box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397); */
-  background: linear-gradient(rgba(255, 255, 255, 0.116), rgba(0, 0, 8, 0.281));
+  background: linear-gradient(rgba(255, 255, 255, 0.116), rgba(89, 89, 90, 0.877));
 }
 
 .content-about-me .p2 {
@@ -250,7 +250,7 @@ a:hover {
 }
 
 ul{
-  background: linear-gradient(rgba(255, 255, 255, 0.116), rgba(0, 0, 8, 0.281));
+  background: linear-gradient(rgba(255, 255, 255, 0.116), rgba(89, 89, 90, 0.877));
 }
 
 .description span {
