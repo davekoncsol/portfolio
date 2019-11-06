@@ -3,8 +3,8 @@
 
 html {
   font-family: 'Roboto', sans-serif;
-  display: flex;
-  justify-content: center;
+  margin:0px;
+  
 
 
 }
@@ -16,8 +16,8 @@ body {
   background: #E3E6EA;
   /* background: url('./images/architecture-art-background-1451474\ \(2\).jpg'); */
   background-size: cover;
-  background-attachment: fixed;
   
+  margin:0px;
   
 
 
@@ -30,7 +30,7 @@ nav {
   display: flex;
   align-items: flex-end;
   /* background: radial-gradient(rgba(128, 128, 128, 0), rgba(0, 0, 255, 0.274)); */
-  border: solid rgb(0, 0, 0) 1px;
+  
   justify-content: space-evenly;
   font-size: 40px;
   /* background: linear-gradient(rgba(255, 255, 255, 0.116), rgba(0, 0, 8, 0.281)); */
@@ -39,7 +39,7 @@ nav {
   /* position: sticky;
     top: 0px; */
   background-size: cover;
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397);
+  
 
 
 }
@@ -58,11 +58,11 @@ a:hover {
   height: 200px;
   background-size: cover;
   background-attachment: fixed;
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397);
+  
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid rgb(0, 0, 0) 1px;
+
   
 
 
@@ -73,12 +73,12 @@ a:hover {
   height: 200px;
   background-size: cover;
   background-attachment: fixed;
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397);
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: solid rgb(0, 0, 0) 1px;
+  
   
 }
 
@@ -87,12 +87,12 @@ a:hover {
   height: 200px;
   background-size: cover;
   background-attachment: fixed;
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397);
+  
   display: flex;
   justify-content: center;
   align-items: center;
   
-  border: solid rgb(0, 0, 0) 1px;
+  
 
 }
 
@@ -101,12 +101,12 @@ a:hover {
   height: 200px;
   background-size: cover;
   background-attachment: fixed;
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397);
+
   display: flex;
   justify-content: center;
   align-items: center;
  
-  border: solid rgb(0, 0, 0) 1px;
+ 
 }
 
 
@@ -119,17 +119,7 @@ a:hover {
     box-shadow: 10px 10px 10px 5px grey; */
 
 /* } */
-.box-1,
-.box-2 {
-  animation: fadeIn duration ease-in delay 1 forwards;
-  background-color: white !important;
-  display: flex;
-  height: 200px;
-  width: 200px;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 10px 10px 5px grey;
-}
+
 
 
 /* .box-1:hover, .box-2:hover{
@@ -138,15 +128,7 @@ a:hover {
 
 } */
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
 
-  to {
-    opacity: 1;
-  }
-}
 
 .description {
   max-width: 40px;
@@ -172,8 +154,8 @@ a:hover {
   align-content: center;
   grid-auto-flow: column;
   justify-content: center;
-  border: solid rgb(0, 0, 0) 1px;
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397);
+ 
+  
   
   padding: 20px;
   background: linear-gradient(rgba(255, 255, 255, 0.116), rgba(0, 0, 8, 0.281));
@@ -197,8 +179,8 @@ a:hover {
   margin-bottom: 15px;
 
 
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397);
-  border: solid rgb(0, 0, 0) 1px;
+  
+  
 }
 
 #index-content div {
@@ -218,7 +200,7 @@ a:hover {
  
 
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397);
-  border: solid rgb(0, 0, 0) 1px;
+  
 
 }
 
@@ -333,7 +315,7 @@ img {
   background-size: cover;
   min-height: 800px;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397);
-  border: solid rgb(0, 0, 0) 1px;
+  
  
 
 }
