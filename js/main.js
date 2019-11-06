@@ -1,6 +1,6 @@
 
 var circles = document.getElementById('index-content');
-var skills = ['AWS','jQuery', 'Python','PHP','Restful APIs','MongoDB','Node.js','Express','Java','JavaScript','HTML','Django','CSS','PostgreSQL','React'];
+var skills = ['AWS','jQuery', 'Python','PHP','APIs','MongoDB','Node.js','Express','Java','JavaScript','HTML','Django','CSS','PostgreSQL','React'];
 
   circles.addEventListener('click', function(evt) {
     // replace current line of code with this code
@@ -8,7 +8,7 @@ var skills = ['AWS','jQuery', 'Python','PHP','Restful APIs','MongoDB','Node.js',
       skills: skills,
       x: evt.clientX,
       y: evt.clientY,
-      dia: randomBetween(10,100),
+      dia: randomBetween(40,120),
       rgba: getRandomRGBA()
     });
   });
@@ -29,7 +29,7 @@ function addCircle({x, y, dia, rgba, skills}) {
   el.style.top = y - Math.floor(dia / 2 + 0.5)  + 'px';
   el.style.width = el.style.height = dia + 'px';
   el.style.backgroundColor = rgba;
-  el.style.fontSize = Math.floor(dia / 3) + 'px';
+  el.style.fontSize = Math.floor(dia / 5) + 'px';
   el.style.color = 'white';
   el.style.textAlign = 'center';
   el.style.lineHeight = dia + 'px';
