@@ -24,7 +24,7 @@ function clearCircle(){
 
 
 function addCircle({x, y, dia, rgba, skills}) {
-  var el = document.createElement('div');
+  var el = document.createElement('span');
   el.style.left = x - Math.floor(dia / 2 + 0.5) + 'px';
   el.style.top = y - Math.floor(dia / 2 + 0.5)  + 'px';
   el.style.width = el.style.height = dia + 'px';
