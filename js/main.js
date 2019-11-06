@@ -33,7 +33,7 @@ function addCircle({x, y, dia, rgba, skills}) {
   el.style.color = 'white';
   el.style.textAlign = 'center';
   el.style.lineHeight = dia + 'px';
-  el.innerHTML = skills[randomBetween(0,15)];
+  el.innerHTML = skills[randomBetween(0,14)];
   circles.appendChild(el);
 }
 
