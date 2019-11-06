@@ -223,6 +223,7 @@ a:hover {
   background-size: cover;
   min-height: 800px;
   padding-top: 100px;
+  border-top: solid rgb(0, 0, 0) 5px;
 
 
 
@@ -231,7 +232,7 @@ a:hover {
 
 .content-about-me img {
   /* box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397); */
-  border-radius: 25px;
+  
   border: solid black 1px;
   margin-top: 25px;
   position: absolute;
@@ -248,10 +249,10 @@ a:hover {
   max-width: 600px;
   /* transform: translate(0px, -200px); */
   /* box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397); */
-  background: white;
+  background:radial-gradient( rgba(90, 89, 89, 0.692), #3f3b39d3) ;
   padding: 10px;
   border:solid black 1px;
-  color:black;
+  color:white;
 }
 
 .content-about-me .p2 {
@@ -263,12 +264,12 @@ a:hover {
 }
 
 ul {
-  background:white;
+  background:radial-gradient( rgba(90, 89, 89, 0.692), #3f3b39d3) ;
   border: solid black 1px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right:10px;
-  color: black;
+  color: white;
 
 
 }
