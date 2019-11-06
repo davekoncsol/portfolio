@@ -17,9 +17,9 @@ body {
   /* background: url('./images/architecture-art-background-1451474\ \(2\).jpg'); */
   background-size: cover;
   background-attachment: fixed;
-  max-width: 1210px;
-  margin: 50px;
-  margin-top:10px;
+  
+  
+
 
 
 }
@@ -63,7 +63,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   border: solid rgb(0, 0, 0) 1px;
-  margin-top: 15px;
+  
 
 
 }
@@ -79,7 +79,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   border: solid rgb(0, 0, 0) 1px;
-  margin-top: 15px;
+  
 }
 
 .middle-image {
@@ -91,8 +91,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  
   border: solid rgb(0, 0, 0) 1px;
 
 }
@@ -106,8 +105,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 15px;
-  margin-bottom: 15px;
+ 
   border: solid rgb(0, 0, 0) 1px;
 }
 
@@ -176,8 +174,7 @@ a:hover {
   justify-content: center;
   border: solid rgb(0, 0, 0) 1px;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397);
-  margin-top: 15px;
-  margin-bottom: 15px;
+  
   padding: 20px;
   background: linear-gradient(rgba(255, 255, 255, 0.116), rgba(0, 0, 8, 0.281));
 }
@@ -218,7 +215,7 @@ a:hover {
   background-attachment: fixed;
   background-size: cover;
   min-height: 800px;
-  margin-bottom: 15px;
+ 
 
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397);
   border: solid rgb(0, 0, 0) 1px;
@@ -337,8 +334,7 @@ img {
   min-height: 800px;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397);
   border: solid rgb(0, 0, 0) 1px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+ 
 
 }
 
