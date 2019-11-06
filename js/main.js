@@ -1,42 +1,30 @@
 var circles = document.getElementById('index-content');
 var left = document.getElementById('left');
 var right = document.getElementById('right');
-
+var sidescroller = document.getElementById('sidescroller');
   
-// var button = document.getElementById('slide');
-// button.onclick = function () {
-//     var container = document.getElementById('container');
-//     scrollAmount = 0;
-//     var slideTimer = setInterval(function(){
-//         container.scrollLeft += 10;
-//         scrollAmount += 10;
-//         if(scrollAmount >= 100){
-//             window.clearInterval(slideTimer);
-//         }
-//     }, 25);
-// };
-
-// var back = document.getElementById('slideBack');
-// back.onclick = function () {
-//     var container = document.getElementById('container');
-//     scrollAmount = 0;
-//     var slideTimer = setInterval(function(){
-//         container.scrollLeft -= 10;
-//         scrollAmount += 10;
-//         if(scrollAmount >= 100){
-//             window.clearInterval(slideTimer);
-//         }
-//     }, 25);
-// };
-
 
 var skills = ['AWS', 'jQuery', 'Python', 'PHP', 'APIs', 'MongoDB', 'Node.js', 'Express', 'Java', 'JavaScript', 'HTML', 'Django', 'CSS', 'PostgreSQL', 'React', 'Socket.io'];
 
 right.addEventListener('click', function(){
-  document.getElementById('sidescroller').scrollLeft += 600;
+  scrollAmount = 0;
+  var slideTimer = setInterval(function(){
+      sidescroller.scrollLeft += 60;
+      scrollAmount += 10;
+      if(scrollAmount >= 100){
+          window.clearInterval(slideTimer);
+      }
+  }, 20);
 });
 left.addEventListener('click', function(){
-  document.getElementById('sidescroller').scrollLeft -= 600;
+  scrollAmount = 0;
+  var slideTimer = setInterval(function(){
+      sidescroller.scrollLeft -= 60;
+      scrollAmount += 10;
+      if(scrollAmount >= 100){
+          window.clearInterval(slideTimer);
+      }
+  }, 20);
 });
 
 
