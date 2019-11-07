@@ -34,6 +34,12 @@ left.addEventListener('click', function(){
 
 circles.addEventListener('click', function (evt) {
   // replace current line of code with this code
+  console.log()
+  console.log(evt.path[0].toString().includes('Button'))
+
+  if(evt.path[0].toString().includes('Button')){
+    return
+  }
   addCircle({
     skills: skills,
     x: evt.clientX,
@@ -46,7 +52,7 @@ circles.addEventListener('click', function (evt) {
 
 
 function clearCircle() {
-  console.log('hit')
+  console.log()
   circles.innerHTML = `      <nav class="">
   <div class="dropdown">
       <a class="dropdown-button" href="index.html">[DK]</a>
