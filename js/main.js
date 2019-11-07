@@ -2,9 +2,11 @@ var circles = document.getElementById('index-content');
 var left = document.getElementById('left');
 var right = document.getElementById('right');
 var sidescroller = document.getElementById('sidescroller');
-  
+var clear = document.getElementById('clear')
 
-var skills = ['AWS', 'jQuery', 'Python', 'PHP', 'APIs', 'MongoDB', 'Node.js', 'Express', 'Java', 'JavaScript', 'HTML', 'Django', 'CSS', 'PostgreSQL', 'React', 'Socket.io'];
+var skills = ['AWS', 'OAUTH', 'Mongoose', 'Heroku', 'SQL' , 'jQuery', 'Python', 'PHP', 'APIs', 'MongoDB', 'Node.js', 'Express', 'Java', 'JavaScript', 'HTML', 'Django', 'CSS', 'PostgreSQL', 'React', 'Socket.io'];
+
+
 
 right.addEventListener('click', function(){
   scrollAmount = 0;
@@ -28,6 +30,8 @@ left.addEventListener('click', function(){
 });
 
 
+
+
 circles.addEventListener('click', function (evt) {
   // replace current line of code with this code
   addCircle({
@@ -42,7 +46,38 @@ circles.addEventListener('click', function (evt) {
 
 
 function clearCircle() {
-  circles.innerHTML = '';
+  console.log('hit')
+  circles.innerHTML = `      <nav class="">
+  <div class="dropdown">
+      <a class="dropdown-button" href="index.html">[DK]</a>
+      <div class="dropdown-content">
+          <a href="about-me.html">About Me</a>
+          <a href="https://www.linkedin.com/in/dave-koncsol/" target="_blank">LinkedIn</a>
+
+          <a href="https://github.com/davekoncsol" target="_blank">GitHub</a>
+      </div>
+  </div>
+  <div class="dropdown">
+      <a class="dropdown-button" href="projects.html">Projects</a>
+      <div class="dropdown-content">
+          <a href="https://github.com/davekoncsol/black-jack" target="_blank">BlackJack</a>
+          <a href="https://github.com/davekoncsol/kickball" target="_blank">Kickball</a>
+          <a href="https://github.com/davekoncsol/superheroes" target="_blank">SuperHeroes</a>
+          <a href="https://www.dapersonaltraining.com" target="_blank">My Personal Training</a>
+          <a href="https://github.com/davekoncsol/dating-app" target="_blank">Dating App</a>
+      </div>
+  </div>
+  <a href="mailto:davekoncsol@gmail.com">Email Me</a>
+
+
+
+</nav>
+<h1>DAVE KONCSOL</h1>
+<h1>FULL STACK DEVELOPER</h1>
+<h3>Click anywhere here for a random skill of mine!</h3>
+<button>Display all skills</button>
+<button id='clear' onclick='clearCircle()'>Clear all skills</button>`;
+
 }
 
 
