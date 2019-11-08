@@ -52,7 +52,7 @@ nav {
   display: flex;
   position: absolute;
   top: 10px;
-
+ align-items: center;
   /* background: radial-gradient(rgba(128, 128, 128, 0), rgba(0, 0, 255, 0.274)); */
   width: 100%;
   justify-content: space-around;
@@ -244,6 +244,7 @@ a:hover {
 #index-content span {
   border-radius: 50%;
   position: absolute;
+  
 }
 
 .content-about-me {
@@ -342,9 +343,11 @@ ul {
 
 }
 
+
+
 .description span {
   display: flex;
-
+  z-index: 0;
   background: rgba(0, 0, 0, .5);
   width: 300px;
   height: 40px;
@@ -411,6 +414,11 @@ img {
 
 }
 
+button,
+h1,
+nav {
+  z-index: 2;
+}
 
 
 /* project.html */
@@ -432,6 +440,12 @@ img {
 
 
 
+}
+
+nav img {
+  max-height: 40px;
+  background:rgb(251, 253, 255);
+  border-radius: 10px;
 }
 
 .project img {

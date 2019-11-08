@@ -34,7 +34,7 @@ left.addEventListener('click', function () {
 
 circles.addEventListener('click', function (evt) {
   // replace current line of code with this code
-
+console.log(evt.path[0].toString())
 
   if (evt.path[0].toString().includes('Button')) {
     return
@@ -52,27 +52,33 @@ circles.addEventListener('click', function (evt) {
 
 function clearCircle() {
  
-  circles.innerHTML = `      <nav class="">
+  circles.innerHTML = `        <nav class="">
   <div class="dropdown">
       <a class="dropdown-button" href="index.html">[DK]</a>
       <div class="dropdown-content">
-          <a href="about-me.html">About Me</a>
+
           <a href="https://www.linkedin.com/in/dave-koncsol/" target="_blank">LinkedIn</a>
 
           <a href="https://github.com/davekoncsol" target="_blank">GitHub</a>
       </div>
   </div>
+  <a href="about-me.html">About Me</a>
   <div class="dropdown">
       <a class="dropdown-button" href="projects.html">Projects</a>
-      <div class="dropdown-content">
+      <!-- <div class="dropdown-content">
           <a href="https://github.com/davekoncsol/black-jack" target="_blank">BlackJack</a>
           <a href="https://github.com/davekoncsol/kickball" target="_blank">Kickball</a>
           <a href="https://github.com/davekoncsol/superheroes" target="_blank">SuperHeroes</a>
           <a href="https://www.dapersonaltraining.com" target="_blank">My Personal Training</a>
           <a href="https://github.com/davekoncsol/dating-app" target="_blank">Dating App</a>
-      </div>
+      </div> -->
   </div>
   <a href="mailto:davekoncsol@gmail.com">Email Me</a>
+  <a href="https://www.linkedin.com/in/dave-koncsol/" target="_blank">
+      <img src='./css/images/LinkedIn_logo_initials.png'></img>
+  </a>
+  <a href="https://github.com/davekoncsol" target="_blank">
+      <img src='./css/images/GitHub_Logo.png'></img></a>
 
 
 
@@ -106,6 +112,7 @@ function addAllCircles({
   el.style.animationName = 'fadein';
   el.style.animationDuration = '2s';
   el.innerHTML = skills;
+  
   circles.appendChild(el);
 }
 
