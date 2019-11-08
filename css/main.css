@@ -84,6 +84,19 @@ nav {
   }
 }
 
+@keyframes fadein {
+  from {
+    opacity: 0
+  }
+
+  to {
+    
+    opacity: 1
+  }
+
+}
+
+
 a {
   text-decoration: none;
   color: white;

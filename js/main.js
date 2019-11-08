@@ -4,28 +4,28 @@ var right = document.getElementById('right');
 var sidescroller = document.getElementById('sidescroller');
 var clear = document.getElementById('clear')
 
-var skills = ['AWS', 'OAUTH', 'Mongoose', 'Heroku', 'SQL' , 'jQuery', 'Python', 'PHP', 'APIs', 'MongoDB', 'Node.js', 'Express', 'Java', 'JavaScript', 'HTML', 'Django', 'CSS', 'PostgreSQL', 'React', 'Socket.io'];
+var skills = ['AWS', 'OAUTH', 'Mongoose', 'Heroku', 'SQL', 'jQuery', 'Python', 'PHP', 'APIs', 'MongoDB', 'Node.js', 'Express', 'Java', 'JavaScript', 'HTML', 'Django', 'CSS', 'PostgreSQL', 'React', 'Socket.io'];
 
 
 
-right.addEventListener('click', function(){
+right.addEventListener('click', function () {
   scrollAmount = 0;
-  var slideTimer = setInterval(function(){
-      sidescroller.scrollLeft += 60;
-      scrollAmount += 10;
-      if(scrollAmount >= 100){
-          window.clearInterval(slideTimer);
-      }
+  var slideTimer = setInterval(function () {
+    sidescroller.scrollLeft += 60;
+    scrollAmount += 10;
+    if (scrollAmount >= 100) {
+      window.clearInterval(slideTimer);
+    }
   }, 20);
 });
-left.addEventListener('click', function(){
+left.addEventListener('click', function () {
   scrollAmount = 0;
-  var slideTimer = setInterval(function(){
-      sidescroller.scrollLeft -= 60;
-      scrollAmount += 10;
-      if(scrollAmount >= 100){
-          window.clearInterval(slideTimer);
-      }
+  var slideTimer = setInterval(function () {
+    sidescroller.scrollLeft -= 60;
+    scrollAmount += 10;
+    if (scrollAmount >= 100) {
+      window.clearInterval(slideTimer);
+    }
   }, 20);
 });
 
@@ -34,10 +34,9 @@ left.addEventListener('click', function(){
 
 circles.addEventListener('click', function (evt) {
   // replace current line of code with this code
-  console.log()
-  console.log(evt.path[0].toString().includes('Button'))
 
-  if(evt.path[0].toString().includes('Button')){
+
+  if (evt.path[0].toString().includes('Button')) {
     return
   }
   addCircle({
@@ -52,7 +51,7 @@ circles.addEventListener('click', function (evt) {
 
 
 function clearCircle() {
-  console.log()
+ 
   circles.innerHTML = `      <nav class="">
   <div class="dropdown">
       <a class="dropdown-button" href="index.html">[DK]</a>
@@ -81,11 +80,34 @@ function clearCircle() {
 <h1>DAVE KONCSOL</h1>
 <h1>FULL STACK DEVELOPER</h1>
 <h3>Click anywhere here for a random skill of mine!</h3>
-<button>Display all skills</button>
+<button onclick="displayAllSkills(event)">Display all skills</button>
 <button id='clear' onclick='clearCircle()'>Clear all skills</button>`;
 
 }
 
+
+function addAllCircles({
+  x,
+  y,
+  dia,
+  rgba,
+  skills,
+  
+}) {
+  var el = document.createElement('span');
+  el.style.left = x - Math.floor(dia / 2 + 0.5) + 'px';
+  el.style.top = y - Math.floor(dia / 2 + 0.5) + 'px';
+  el.style.width = el.style.height = dia + 'px';
+  el.style.backgroundColor = rgba;
+  el.style.fontSize = Math.floor(dia / 5) + 'px';
+  el.style.color = 'white';
+  el.style.textAlign = 'center';
+  el.style.lineHeight = dia + 'px';
+  el.style.animationName = 'fadein';
+  el.style.animationDuration = '2s';
+  el.innerHTML = skills;
+  circles.appendChild(el);
+}
 
 
 
@@ -118,4 +140,21 @@ function getRandomRGBA() {
   return ['rgba(', randomBetween(0, 255), ',', randomBetween(0, 255), ',',
     randomBetween(0, 255), ',', randomBetween(2, 10) / 10, ')'
   ].join('');
+}
+
+function displayAllSkills(event) {
+  console.log(event.clientX)
+  console.log(event.clientY)
+  console.log(window.innerHeight)
+  console.log(window.innerWidth)
+  clearCircle();
+  skills.forEach(skill => 
+  addAllCircles({
+    skills: skill,
+    x: randomBetween(40, 600),
+    y: randomBetween(40, 600),
+    dia: randomBetween(40, 120),
+    rgba: getRandomRGBA()
+  }));
+
 }
