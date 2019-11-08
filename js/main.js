@@ -151,8 +151,8 @@ function displayAllSkills(event) {
   skills.forEach(skill => 
   addAllCircles({
     skills: skill,
-    x: randomBetween(40, 600),
-    y: randomBetween(40, 600),
+    x: randomBetween(0, window.innerWidth ),
+    y: randomBetween(10, 450),
     dia: randomBetween(40, 120),
     rgba: getRandomRGBA()
   }));
