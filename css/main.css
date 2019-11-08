@@ -42,7 +42,7 @@ nav {
   top: 10px;
   align-items: center;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-evenly;
   font-size: 40px;
   animation-name: animatetop;
   animation-duration: .5s;
