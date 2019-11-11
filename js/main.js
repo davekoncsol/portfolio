@@ -52,37 +52,34 @@ console.log(evt.path[0].toString())
 
 function clearCircle() {
  
-  circles.innerHTML = `        <nav class="">
-  <div class="dropdown">
-      <a class="dropdown-button" href="index.html">[DK]</a>
-      <div class="dropdown-content">
+  circles.innerHTML = `           <nav class="">
 
-          <a href="https://www.linkedin.com/in/dave-koncsol/" target="_blank">LinkedIn</a>
-
-          <a href="https://github.com/davekoncsol" target="_blank">GitHub</a>
-      </div>
-  </div>
+  <a class="dropdown-button" href="index.html">[DK]</a>
   <a href="about-me.html">About Me</a>
+  <a class="dropdown-button" href="projects.html">Projects</a>
+
+
+
+  <a href="https://www.linkedin.com/in/dave-koncsol/" target="_blank">
+      <img src='./css/images/LinkedIn_logo_initials.png'></img>
+  </a>
   <div class="dropdown">
-      <a class="dropdown-button" href="projects.html">Projects</a>
+      <a href="https://github.com/davekoncsol" target="_blank">
+          <img class="dropdown-button" src='./css/images/GitHub_Logo.png'></img>
+      </a>
       <!-- <div class="dropdown-content">
           <a href="https://github.com/davekoncsol/black-jack" target="_blank">BlackJack</a>
           <a href="https://github.com/davekoncsol/kickball" target="_blank">Kickball</a>
           <a href="https://github.com/davekoncsol/superheroes" target="_blank">SuperHeroes</a>
-          <a href="https://www.dapersonaltraining.com" target="_blank">My Personal Training</a>
           <a href="https://github.com/davekoncsol/dating-app" target="_blank">Dating App</a>
+
       </div> -->
   </div>
-  <a href="mailto:davekoncsol@gmail.com">Email Me</a>
-  <a href="https://www.linkedin.com/in/dave-koncsol/" target="_blank">
-      <img src='./css/images/LinkedIn_logo_initials.png'></img>
-  </a>
-  <a href="https://github.com/davekoncsol" target="_blank">
-      <img src='./css/images/GitHub_Logo.png'></img></a>
 
 
 
 </nav>
+
 <h1>DAVE KONCSOL</h1>
 <h1>FULL STACK DEVELOPER</h1>
 <h3>Click anywhere here for a random skill of mine!</h3>
