@@ -4,7 +4,7 @@ var right = document.getElementById('right');
 var sidescroller = document.getElementById('sidescroller');
 var clear = document.getElementById('clear')
 
-var skills = ['AWS', 'OAUTH', 'Mongoose', 'Heroku', 'SQL', 'jQuery', 'Python', 'PHP', 'APIs', 'MongoDB', 'Node.js', 'Express', 'Java', 'JavaScript', 'HTML', 'Django', 'CSS', 'PostgreSQL', 'React', 'Socket.io'];
+var skills = ['AWS', 'OAUTH', 'Mongoose', 'Heroku', 'SQL', 'jQuery', 'Python', 'PHP', 'APIs', 'MongoDB', 'Node.js', 'Express', 'Java', 'JavaScript', 'HTML5', 'Django', 'CSS3', 'PostgreSQL', 'React', 'Socket.io', 'AJAX', 'Bootstrap', 'JSON', 'MySQL'];
 
 
 
