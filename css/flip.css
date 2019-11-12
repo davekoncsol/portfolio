@@ -64,9 +64,13 @@ margin:0px;
 .project div {
     display: flex;
     flex-direction: column;
-    align-content: center;
+
+   
     justify-content: center;
+    
     text-align: center;
+    margin: 10px;
+    
     
     /* border: solid black 1px; */
 
