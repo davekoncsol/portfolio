@@ -51,7 +51,7 @@ function clearCircle() {
   <a href="about-me.html">About Me</a>
   <a class="dropdown-button" href="projects.html">Projects</a>
   <a href="https://www.linkedin.com/in/dave-koncsol/" target="_blank">
-      <img src='./css/images/LinkedIn_logo_initials.png'></img>
+      <img src='./css/images/LI.png'></img>
   </a>
   <div class="dropdown">
       <a href="https://github.com/davekoncsol" target="_blank">
