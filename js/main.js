@@ -3,9 +3,7 @@ var left = document.getElementById('left');
 var right = document.getElementById('right');
 var sidescroller = document.getElementById('sidescroller');
 var clear = document.getElementById('clear')
-
 var skills = ['AWS', 'OAUTH', 'Mongoose', 'Heroku', 'SQL', 'jQuery', 'Python', 'PHP', 'APIs', 'MongoDB', 'Node.js', 'Express', 'Java', 'JavaScript', 'HTML5', 'Django', 'CSS3', 'PostgreSQL', 'React', 'Socket.io', 'AJAX', 'Bootstrap', 'JSON', 'MySQL'];
-
 
 
 right.addEventListener('click', function () {
@@ -31,11 +29,7 @@ left.addEventListener('click', function () {
 
 
 
-
 circles.addEventListener('click', function (evt) {
-  // replace current line of code with this code
-console.log(evt.path[0].toString())
-
   if (evt.path[0].toString().includes('Button')) {
     return
   }
@@ -51,15 +45,11 @@ console.log(evt.path[0].toString())
 
 
 function clearCircle() {
- 
   circles.innerHTML = `           <nav class="">
 
   <a class="dropdown-button" href="index.html">[DK]</a>
   <a href="about-me.html">About Me</a>
   <a class="dropdown-button" href="projects.html">Projects</a>
-
-
-
   <a href="https://www.linkedin.com/in/dave-koncsol/" target="_blank">
       <img src='./css/images/LinkedIn_logo_initials.png'></img>
   </a>
@@ -75,8 +65,6 @@ function clearCircle() {
 
       </div> -->
   </div>
-
-
 
 </nav>
 
@@ -95,7 +83,7 @@ function addAllCircles({
   dia,
   rgba,
   skills,
-  
+
 }) {
   var el = document.createElement('span');
   el.style.left = x - Math.floor(dia / 2 + 0.5) + 'px';
@@ -109,7 +97,7 @@ function addAllCircles({
   el.style.animationName = 'fadein';
   el.style.animationDuration = '2s';
   el.innerHTML = skills;
-  
+
   circles.appendChild(el);
 }
 
@@ -152,13 +140,13 @@ function displayAllSkills(event) {
   console.log(window.innerHeight)
   console.log(window.innerWidth)
   clearCircle();
-  skills.forEach(skill => 
-  addAllCircles({
-    skills: skill,
-    x: randomBetween(0, window.innerWidth ),
-    y: randomBetween(10, 450),
-    dia: randomBetween(40, 120),
-    rgba: getRandomRGBA()
-  }));
+  skills.forEach(skill =>
+    addAllCircles({
+      skills: skill,
+      x: randomBetween(0, window.innerWidth),
+      y: randomBetween(10, 450),
+      dia: randomBetween(40, 120),
+      rgba: getRandomRGBA()
+    }));
 
 }
