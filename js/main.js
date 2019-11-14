@@ -45,8 +45,8 @@ circles.addEventListener('click', function (evt) {
 
 
 function clearCircle() {
-  circles.innerHTML = `           <nav class="">
-
+  circles.innerHTML = `           
+  <nav class="">
   <a class="dropdown-button" href="index.html">[DK]</a>
   <a href="about-me.html">About Me</a>
   <a class="dropdown-button" href="projects.html">Projects</a>
