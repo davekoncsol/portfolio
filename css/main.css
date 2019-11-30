@@ -84,7 +84,7 @@ a:hover {
 }
 
 .top-image {
-  height: 400px;
+  height: 250px;
   background-size: cover;
   background-attachment: fixed;
   display: flex;
