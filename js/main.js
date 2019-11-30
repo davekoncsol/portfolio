@@ -30,9 +30,10 @@ left.addEventListener('click', function () {
 
 
 circles.addEventListener('click', function (evt) {
-  if (evt.path[0].toString().includes('Button')) {
+  if (evt.path[0].toString().includes('Button') || evt.path[0].toString().includes('Image') || evt.path[0].toString().includes('http')) {
     return
   }
+  console.log(evt.path[0].toString())
   addCircle({
     skills: skills,
     x: evt.clientX,
