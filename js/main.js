@@ -43,8 +43,6 @@ circles.addEventListener('click', function (evt) {
   });
 });
 
-
-
 function clearCircle() {
   circles.innerHTML = `           
   <nav class="">
@@ -74,7 +72,6 @@ function clearCircle() {
 
 }
 
-
 function addAllCircles({
   x,
   y,
@@ -98,9 +95,6 @@ function addAllCircles({
 
   circles.appendChild(el);
 }
-
-
-
 
 function addCircle({
   x,

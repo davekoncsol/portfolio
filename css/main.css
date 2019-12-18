@@ -69,7 +69,6 @@ nav {
   }
 }
 
-
 a {
   text-decoration: none;
   color: white;
@@ -287,13 +286,9 @@ button {
 
 button:hover {
   background: gray;
-
 }
 
 button:active {
-
-
-
   outline: none;
 }
 
@@ -332,23 +327,15 @@ button:active {
   display: block;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-
-
-/* project.html */
-
 nav img:hover  {
   box-shadow: 0px 8px 16px 3px rgb(0, 0, 0);
 }
-
 
 nav img {
   max-height: 40px;
   background: rgb(251, 253, 255);
   border-radius: 10px;
 }
-
-
 
 @media only screen and (max-width: 1200px) {
 
@@ -365,21 +352,16 @@ nav img {
   nav {
     font-size: 30px;
   }
-
   .index-footer {
     font-size: 10px;
   }
-
 }
-
 
 @media only screen and (max-width: 750px) {
   nav {
     font-size: 20px;
   }
-
   .index-footer {
     font-size: 7px;
   }
-
 }
