@@ -63,12 +63,9 @@ function clearCircle() {
           <a href="https://github.com/davekoncsol/kickball" target="_blank">Kickball</a>
           <a href="https://github.com/davekoncsol/superheroes" target="_blank">SuperHeroes</a>
           <a href="https://github.com/davekoncsol/dating-app" target="_blank">Dating App</a>
-
       </div> -->
   </div>
-
 </nav>
-
 <h1>DAVE KONCSOL</h1>
 <h1>FULL STACK DEVELOPER</h1>
 <h3>Click anywhere here for a random skill of mine!</h3>
