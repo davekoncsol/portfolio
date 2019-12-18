@@ -54,7 +54,6 @@ nav {
     top: -300px;
     opacity: 0
   }
-
   to {
     top: 0;
     opacity: 1
@@ -65,12 +64,9 @@ nav {
   from {
     opacity: 0
   }
-
   to {
-
     opacity: 1
   }
-
 }
 
 
@@ -79,8 +75,8 @@ a {
   color: white;
 }
 
-a:hover {
-  text-decoration: underline;
+nav a:hover {
+  text-shadow: 0px 8px 16px rgba(0, 0, 0);
 }
 
 .top-image {
@@ -212,7 +208,7 @@ a:hover {
 }
 
 .item-content {
-  
+
   display: none;
   transform: translate();
   background-color: #f1f1f1be;
@@ -256,7 +252,10 @@ ul {
 
 }
 
-nav, h1, h3, button {
+nav,
+h1,
+h3,
+button {
   z-index: 1;
 }
 
@@ -283,7 +282,7 @@ button {
   background: black;
   margin: 10px;
   color: white;
-  border-radius:10px;
+  border-radius: 10px;
 }
 
 button:hover {
@@ -292,9 +291,9 @@ button:hover {
 }
 
 button:active {
-  
-  
-  
+
+
+
   outline: none;
 }
 
@@ -334,20 +333,13 @@ button:active {
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropdown-button {
-  box-shadow: 0px 8px 16px 3px rgb(0, 0, 0);
-
-}
-
-button,
-h1,h3,
-nav {
-  
-}
 
 
 /* project.html */
 
+nav img:hover  {
+  box-shadow: 0px 8px 16px 3px rgb(0, 0, 0);
+}
 
 
 nav img {
@@ -359,7 +351,7 @@ nav img {
 
 
 @media only screen and (max-width: 1200px) {
-  
+
 
   .content-about-me p,
   .p2 {
