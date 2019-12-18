@@ -1,41 +1,33 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
-
 html {
   font-family: 'Roboto', sans-serif;
   margin: 0px;
 }
-
 main {
   margin: 0px;
 }
-
 body {
   color: white;
   background-size: cover;
   margin: 0px;
 }
-
 #index {
   background: url('./images/color-conifer-environment-192136.jpg');
   background-size: cover;
   background-position: center;
 }
-
 #projects {
   background: url('./images/laptop-desk-macbook-writing-working-technology-860609-pxhere.com.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
-
 #about-me {
   background: url('./images/music-crowd-concert-audience-live-musician-315-pxhere.com.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
 }
-
 nav {
   display: flex;
   position: absolute;
@@ -47,7 +39,6 @@ nav {
   animation-name: animatetop;
   animation-duration: .5s;
 }
-
 /* Add Animation */
 @keyframes animatetop {
   from {
@@ -59,7 +50,6 @@ nav {
     opacity: 1
   }
 }
-
 @keyframes fadein {
   from {
     opacity: 0
@@ -68,16 +58,13 @@ nav {
     opacity: 1
   }
 }
-
 a {
   text-decoration: none;
   color: white;
 }
-
 nav a:hover {
   text-shadow: 0px 8px 16px rgba(0, 0, 0);
 }
-
 .top-image {
   height: 250px;
   background-size: cover;
@@ -87,7 +74,6 @@ nav a:hover {
   align-items: center;
   border-bottom: solid black 5px;
 }
-
 .index-top-image {
   height: 550px;
   background-size: cover;
@@ -97,7 +83,6 @@ nav a:hover {
   justify-content: center;
   align-items: center;
 }
-
 .about-me-image {
   background: url('./images/photography-purple-train-color-training-studio-764110-pxhere.com.jpg');
   height: 450px;
@@ -109,7 +94,6 @@ nav a:hover {
   justify-content: space-evenly;
   align-items: center;
 }
-
 .index-middle-image {
   height: 200px;
   background-size: cover;
@@ -118,17 +102,13 @@ nav a:hover {
   justify-content: center;
   align-items: center;
 }
-
-
 .description {
   max-width: 40px;
   height: 300px;
   position: -webkit-sticky;
   position: sticky;
   left: 0;
-  /* become sticky once touching left edge */
 }
-
 .sidescroller {
   display: flex;
   align-items: center;
@@ -137,7 +117,6 @@ nav a:hover {
   background: #000;
   border: solid rgb(0, 0, 0) 1px;
 }
-
 .content-1 {
   display: grid;
   align-content: center;
@@ -145,16 +124,13 @@ nav a:hover {
   justify-content: center;
   background: linear-gradient(rgba(255, 255, 255, 0.116), rgba(0, 0, 8, 0.281));
 }
-
 .arrow {
   align-self: center;
 }
-
 .arrow:hover {
   cursor: pointer;
   font-size: 20px;
 }
-
 .index-footer {
   display: flex;
   align-items: center;
@@ -163,13 +139,10 @@ nav a:hover {
   min-height: 100px;
   position: initial;
 }
-
 #index-content span {
   border-radius: 50%;
   position: absolute;
-
 }
-
 .content-about-me {
   display: flex;
   align-items: center;
@@ -181,15 +154,12 @@ nav a:hover {
   padding-top: 100px;
   border-top: solid rgb(0, 0, 0) 5px;
 }
-
 .content-about-me img {
   border: solid black 1px;
   margin-top: 25px;
   position: absolute;
   top: 320px;
-
 }
-
 .content-about-me p {
   font-size: 20px;
   margin-left: 60px;
@@ -200,14 +170,11 @@ nav a:hover {
   border: solid black 1px;
   color: white;
 }
-
 .item {
   display: flex;
   position: relative;
 }
-
 .item-content {
-
   display: none;
   transform: translate();
   background-color: #f1f1f1be;
@@ -216,8 +183,6 @@ nav a:hover {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-
-/* Links inside the dropdown */
 .item-content a {
   color: black;
   padding: 12px 16px;
@@ -225,12 +190,9 @@ nav a:hover {
   font-size: 10px;
   text-align: center;
 }
-
 .item-content a:hover {
   background-color: rgba(221, 221, 221, 0.507);
 }
-
-/* Show the item menu on hover */
 .item:hover .item-content {
   display: flex;
   justify-content: space-evenly;
@@ -238,9 +200,7 @@ nav a:hover {
   position: absolute;
   animation-name: animatetop;
   animation-duration: .5s;
-
 }
-
 ul {
   background: radial-gradient(rgba(90, 89, 89, 0.692), #3f3b39d3);
   border: solid black 1px;
@@ -248,16 +208,13 @@ ul {
   padding-bottom: 10px;
   padding-right: 10px;
   color: white;
-
 }
-
 nav,
 h1,
 h3,
 button {
   z-index: 1;
 }
-
 .description span {
   display: flex;
   z-index: 0;
@@ -272,83 +229,37 @@ button {
   color: #fff;
   font-size: 14px;
 }
-
 img {
   max-height: 300px;
 }
-
 button {
   background: black;
   margin: 10px;
   color: white;
   border-radius: 10px;
 }
-
 button:hover {
   background: gray;
 }
-
 button:active {
   outline: none;
 }
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  font-size: 10px;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
 nav img:hover  {
   box-shadow: 0px 8px 16px 3px rgb(0, 0, 0);
 }
-
 nav img {
   max-height: 40px;
-  background: rgb(251, 253, 255);
+  background: rgb(252, 252, 252);
   border-radius: 10px;
 }
-
 @media only screen and (max-width: 1200px) {
-
-
   .content-about-me p,
   .p2 {
     transform: translate(0px, 0px);
   }
-
   .content-about-me {
     flex-direction: column;
   }
-
   nav {
     font-size: 30px;
   }
@@ -356,7 +267,6 @@ nav img {
     font-size: 10px;
   }
 }
-
 @media only screen and (max-width: 750px) {
   nav {
     font-size: 20px;
