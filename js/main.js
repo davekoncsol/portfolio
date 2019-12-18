@@ -5,7 +5,6 @@ var sidescroller = document.getElementById('sidescroller');
 var clear = document.getElementById('clear')
 var skills = ['AWS', 'OAUTH', 'Mongoose', 'Heroku', 'SQL', 'jQuery', 'Python', 'PHP', 'APIs', 'MongoDB', 'Node.js', 'Express', 'Java', 'JavaScript', 'HTML5', 'Django', 'CSS3', 'PostgreSQL', 'React', 'Socket.io', 'AJAX', 'Bootstrap', 'JSON', 'MySQL'];
 
-
 right.addEventListener('click', function () {
   scrollAmount = 0;
   var slideTimer = setInterval(function () {
@@ -26,8 +25,6 @@ left.addEventListener('click', function () {
     }
   }, 20);
 });
-
-
 
 circles.addEventListener('click', function (evt) {
   if (evt.path[0].toString().includes('Button') || evt.path[0].toString().includes('Image') || evt.path[0].toString().includes('http')) {
@@ -69,7 +66,6 @@ function clearCircle() {
 <h3>Click anywhere here for a random skill of mine!</h3>
 <button onclick="displayAllSkills(event)">Display all skills</button>
 <button id='clear' onclick='clearCircle()'>Clear all skills</button>`;
-
 }
 
 function addAllCircles({
@@ -92,10 +88,8 @@ function addAllCircles({
   el.style.animationName = 'fadein';
   el.style.animationDuration = '2s';
   el.innerHTML = skills;
-
   circles.appendChild(el);
 }
-
 function addCircle({
   x,
   y,
@@ -115,17 +109,14 @@ function addCircle({
   el.innerHTML = skills[randomBetween(0, skills.length - 1)];
   circles.appendChild(el);
 }
-
 function randomBetween(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
-
 function getRandomRGBA() {
   return ['rgba(', randomBetween(0, 255), ',', randomBetween(0, 255), ',',
     randomBetween(0, 255), ',', randomBetween(2, 10) / 10, ')'
   ].join('');
 }
-
 function displayAllSkills(event) {
   console.log(event.clientX)
   console.log(event.clientY)
@@ -140,5 +131,4 @@ function displayAllSkills(event) {
       dia: randomBetween(40, 120),
       rgba: getRandomRGBA()
     }));
-
 }
