@@ -28,6 +28,10 @@ body {
   background-attachment: fixed;
   background-position: center;
 }
+
+#projects h1{
+  margin-top: 60px;
+}
 nav {
   display: flex;
   position: absolute;
@@ -155,13 +159,15 @@ nav a:hover {
   border-top: solid rgb(0, 0, 0) 5px;
 }
 .content-about-me img {
-  border: solid black 1px;
+  border: solid black 5px;
+  border-radius: 50%;
   margin-top: 25px;
   position: absolute;
   top: 320px;
 }
 .content-about-me p {
   font-size: 20px;
+  text-align: center;
   margin-left: 60px;
   margin-right: 60px;
   max-width: 600px;
