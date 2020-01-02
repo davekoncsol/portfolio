@@ -142,9 +142,13 @@ nav a:hover {
   justify-content: center;
   background-size: cover;
   min-height: 100px;
-  position: initial;
   background: rgba(0, 113, 158, 0.733);
 }
+
+.index-footer h1{
+margin: 0px!important;
+}
+
 #index-content span {
   border-radius: 50%;
   position: absolute;
