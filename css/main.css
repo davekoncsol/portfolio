@@ -15,7 +15,7 @@ body {
   background: url('./images/nature-horizon-mountain-snow-cloud-sky-15432-pxhere.com.jpg');
   background-size: cover;
   background-position: center;
-  background-position-y: -200px;
+  background-position-y: -225px;
 }
 #projects {
   background: url('./images/laptop-desk-macbook-writing-working-technology-860609-pxhere.com.jpg');
@@ -127,7 +127,7 @@ nav a:hover {
   align-content: center;
   grid-auto-flow: column;
   justify-content: center;
-  background: linear-gradient(rgba(255, 255, 255, 0.116), rgba(0, 0, 8, 0.281));
+  background: linear-gradient(rgba(255, 255, 255, 0.116), rgba(0, 0, 8, 0.137));
 }
 .arrow {
   align-self: center;
@@ -143,6 +143,7 @@ nav a:hover {
   background-size: cover;
   min-height: 100px;
   position: initial;
+  background: rgba(0, 113, 158, 0.733);
 }
 #index-content span {
   border-radius: 50%;
