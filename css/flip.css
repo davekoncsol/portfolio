@@ -46,6 +46,9 @@
 
 
 
+.project img {
+    max-height: 200px;
+}
 
 .project div {
     display: flex;
