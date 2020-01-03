@@ -141,7 +141,7 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   background-size: cover;
-  min-height: 100px;
+  min-height: 120px;
   background: rgba(0, 37, 51, 0.733);
 }
 
