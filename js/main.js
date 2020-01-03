@@ -3,7 +3,7 @@ var left = document.getElementById('left');
 var right = document.getElementById('right');
 var sidescroller = document.getElementById('sidescroller');
 var clear = document.getElementById('clear')
-var skills = ['AWS', 'OAUTH', 'Mongoose', 'Heroku', 'SQL', 'jQuery', 'Python', 'PHP', 'APIs', 'MongoDB', 'Node.js', 'Express', 'Java', 'JavaScript', 'HTML5', 'Django', 'CSS3', 'PostgreSQL', 'React', 'Socket.io', 'AJAX', 'Bootstrap', 'JSON', 'MySQL'];
+var skills = ['AWS', 'OAUTH','Angular' ,'Mongoose', 'Heroku', 'SQL', 'jQuery', 'Python', 'PHP', 'APIs', 'MongoDB', 'Node.js', 'Express', 'JavaScript', 'HTML5', 'Django', 'CSS3', 'PostgreSQL', 'React', 'Socket.io', 'AJAX', 'Bootstrap', 'JSON', 'MySQL'];
 
 right.addEventListener('click', function () {
   scrollAmount = 0;

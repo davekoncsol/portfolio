@@ -22,6 +22,9 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  
+
+
 }
 #about-me {
   background: url('./images/music-crowd-concert-audience-live-musician-315-pxhere.com.jpg');
@@ -96,9 +99,15 @@ nav a:hover {
   background-attachment: fixed;
   flex-direction: column;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
+
+/* .about-me-image h1 {
+  font-size: 15vmax;
+  z-index: 0;
+  margin: 0;
+} */
 .index-middle-image {
   height: 200px;
   background-size: cover;
