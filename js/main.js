@@ -5,6 +5,10 @@ var sidescroller = document.getElementById('sidescroller');
 var clear = document.getElementById('clear')
 var skills = ['AWS', 'OAUTH','Angular' ,'Mongoose', 'Heroku', 'SQL', 'jQuery', 'Python', 'PHP', 'APIs', 'MongoDB', 'Node.js', 'Express', 'JavaScript', 'HTML5', 'Django', 'CSS3', 'PostgreSQL', 'React', 'Socket.io', 'AJAX', 'Bootstrap', 'JSON', 'MySQL'];
 
+
+
+
+
 right.addEventListener('click', function () {
   scrollAmount = 0;
   var slideTimer = setInterval(function () {
@@ -26,11 +30,26 @@ left.addEventListener('click', function () {
   }, 20);
 });
 
-circles.addEventListener('click', function (evt) {
-  if (evt.path[0].toString().includes('Button') || evt.path[0].toString().includes('Image') || evt.path[0].toString().includes('http')) {
+// circles.addEventListener('click', function (evt) {
+//   if (evt.path[0].toString().includes('Button') || evt.path[0].toString().includes('Image') || evt.path[0].toString().includes('http')) {
+//     return
+//   }
+//   console.log(evt.path[0].toString())
+//   addCircle({
+//     skills: skills,
+//     x: evt.clientX,
+//     y: evt.clientY,
+//     dia: randomBetween(40, 120),
+//     rgba: getRandomRGBA()
+//   });
+// });
+
+function circles2(evt) {
+  console.log(evt.target)
+  if (evt.target.toString().includes('Button') || evt.target.toString().includes('Image') || evt.target.toString().includes('http')) {
     return
   }
-  console.log(evt.path[0].toString())
+  console.log(evt.target.toString())
   addCircle({
     skills: skills,
     x: evt.clientX,
@@ -38,7 +57,8 @@ circles.addEventListener('click', function (evt) {
     dia: randomBetween(40, 120),
     rgba: getRandomRGBA()
   });
-});
+}
+
 
 function clearCircle() {
   circles.innerHTML = `           
