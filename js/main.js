@@ -49,11 +49,11 @@ function circles2(evt) {
   if (evt.target.toString().includes('Button') || evt.target.toString().includes('Image') || evt.target.toString().includes('http')) {
     return
   }
-  console.log(evt.target.toString())
+  console.log(evt.view.scrollY)
   addCircle({
     skills: skills,
     x: evt.clientX,
-    y: evt.clientY,
+    y: evt.clientY + evt.view.scrollY,
     dia: randomBetween(40, 120),
     rgba: getRandomRGBA()
   });
